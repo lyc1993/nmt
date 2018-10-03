@@ -14,7 +14,7 @@ en_size = [];
 zh_size = [];
 
 cd '../../spectrodata/en10000'
-for i = 0:numfiles-1
+for i = 0:3
     fprintf('%d\n',i)
     cd '../../audiodata/en10000'
     [data, Fs] = audioread(['en',int2str(i),'.wav']);
